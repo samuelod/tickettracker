@@ -7,7 +7,7 @@ function App() {
     <div className="app">
       <h1 className='ticket-tracker__heading'>Ticket Tracker</h1>
       <main className='ticket-tracker__cards'>
-        <TicketGallery EmployeeArr={team} />
+        <TicketGallery EmployeeInfoArr={team} />
       </main>
     </div>
   );
