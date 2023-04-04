@@ -1,16 +1,18 @@
 import React from 'react';
 import Counter from "../Counter/Counter";
-import "./EmployeeTicket.scss";
 
 const EmployeeTicket = (props) => {
-    const { name, role } = props;
-  return (
-    <div>
-        <h2 className='employee-ticket__name'>{name}</h2>
-        <h3 className='employee-ticket__role'>{role}</h3>
-        <Counter />
+    const {team} = props;
+    const employeeTickets = team.map((employee, index) => {
+        return (
+        <div>
+        <h2 className='employee-ticket__name'>{employee.name}</h2>
+        <h3 className='employee-ticket__role'>{employee.role}</h3>
+        <Counter/>
     </div>
-  )
-}
-
+    )})
+        return(
+            <div>{employeeTickets}</div>
+        )
+        }
 export default EmployeeTicket

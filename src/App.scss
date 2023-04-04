@@ -1,0 +1,36 @@
+@use "./assets/sass/variables" as *;
+@use "./assets/sass/font" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    background-color: $primary-color;
+    width: 100%;
+    min-height: 10vh;
+    text-align: center;
+}
+
+.ticket-tracker__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.ticket-tracker__heading {
+    font-size: 4rem;
+    padding-top: 20px;
+    color: $text-color;
+}
+
+@media screen and (min-width: 700px) {
+    .app {
+        height: auto;
+    }
+}
+
