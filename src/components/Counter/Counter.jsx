@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import "./Counter.scss";
 
 const Counter = () => {
     const [counter, setCounter] = useState(0);
@@ -16,9 +16,10 @@ const Counter = () => {
     <div className='counter'>
         <h3 className='counter__header'>Counter</h3>
         <div className='counter__container'>
-            <button className='counter__plus' onClick={handlePlus}>+</button>
+            <button className='counter__buttons' onClick={handleMinus}>—</button> 
             <h5 className='counter__tracker'>{counter}</h5>
-            <button className='counter__minus' onClick={handleMinus}>-</button>
+            <button className='counter__buttons' onClick={handlePlus}>+</button>
+
         </div>
     </div>
   );
