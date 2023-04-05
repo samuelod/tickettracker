@@ -30,3 +30,20 @@
 .employee-ticket__role{
     padding-top: 1rem;
 }
+
+
+@media screen and (min-width: 700px) {
+    .employee-ticket__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 90vw;
+        margin-left: 5%;
+    }   
+    
+    .employee-ticket {
+        width: 230px;
+        height: 40vh;
+        margin: 5%;
+        padding: 0;
+    }
+}
